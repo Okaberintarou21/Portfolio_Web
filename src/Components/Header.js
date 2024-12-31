@@ -4,11 +4,13 @@ import { useState, useEffect } from "react";
 import Modal from './Modal';
 
 function Header() {
+
     const textItems = [
         "Web Developer",
         "Frontend Developer",
         "Electrical Engineer"
     ];
+
     const [currentText, setCurrentText] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -36,7 +38,7 @@ function Header() {
 
         const timer = setTimeout(type, isDeleting ? typingSpeed / 2 : typingSpeed);
         return () => clearTimeout(timer);
-    }, [currentText, isDeleting, currentIndex, textItems]);
+    }, [currentText, isDeleting, currentIndex]);
 
     return (
         <div>
