@@ -11,12 +11,12 @@ function Content() {
     useEffect(() => {
         // Initialize AOS
         AOS.init({
-          duration: 1000, // Customize the animation duration
-         
+            duration: 1000, // Customize the animation duration
+
         });
-      }, []);
+    }, []);
     return (
-        <div  data-aos="fade-left">
+        <div data-aos="fade-left">
             <section id="about" className="about-mf sect-pt4 route">
                 <div className="container">
                     <div className="row">
@@ -75,12 +75,12 @@ function Content() {
                                                 พร้อมนำความรู้เหล่านี้มาประยุกต์ใช้ในการพัฒนาระบบซอฟต์แวร์อย่างมีประสิทธิภาพ
                                             </p>
                                             <p className="lead">
-                                                มีประสบการณ์ในการพัฒนา <span className="text-danger font-weight-bold"> Web Application</span> โดยใช้เทคโนโลยีสมัยใหม่ เช่น <span style={{color:'#00c58e', fontWeight: 'bold'}}>React</span> , <span style={{color:'#00c58e', fontWeight: 'bold'}}>Node.js</span>  และ <span style={{color:'#00c58e', fontWeight: 'bold'}}>TailwindCSS</span> รวมถึงการใช้ <span style={{color:'#00c58e', fontWeight: 'bold'}}>React Bootstrap </span>
+                                                มีประสบการณ์ในการพัฒนา <span className="text-danger font-weight-bold"> Web Application</span> โดยใช้เทคโนโลยีสมัยใหม่ เช่น <span style={{ color: '#00c58e', fontWeight: 'bold' }}>React</span> , <span style={{ color: '#00c58e', fontWeight: 'bold' }}>Node.js</span>  และ <span style={{ color: '#00c58e', fontWeight: 'bold' }}>TailwindCSS</span> รวมถึงการใช้ <span style={{ color: '#00c58e', fontWeight: 'bold' }}>React Bootstrap </span>
                                                 เพื่อสร้างส่วนประกอบ <span className="text-primary font-weight-bold">UI</span>ที่ดูดีและตอบสนองทุกการใช้งาน
                                             </p>
                                             <p className="lead ">
-                                                มีความคุ้นเคยกับการทำงานในระบบ <span style={{ color: '#ff6600', fontWeight: 'bold', fontSize: '17px',marginRight:'5px' }}> Git Flow Control</span>
-                                                 ซึ่งช่วยให้สามารถจัดการการพัฒนาโค้ดอย่างเป็นระบบ พร้อมทำงานร่วมกับทีมเพื่อส่งมอบงานที่มีคุณภาพ
+                                                มีความคุ้นเคยกับการทำงานในระบบ <span style={{ color: '#ff6600', fontWeight: 'bold', fontSize: '17px', marginRight: '5px' }}> Git Flow Control</span>
+                                                ซึ่งช่วยให้สามารถจัดการการพัฒนาโค้ดอย่างเป็นระบบ พร้อมทำงานร่วมกับทีมเพื่อส่งมอบงานที่มีคุณภาพ
                                             </p>
                                             <p className="lead">
                                                 ชอบการทำงานเป็นทีม เข้ากับผู้อื่นได้ง่าย อัธยาศัยดี และออกกำลังกายเป็นประจำ เพื่อเสริมสร้างสุขภาพกายและใจให้พร้อมสำหรับทุกความท้าทาย
@@ -99,7 +99,7 @@ function Content() {
                 </div>
             </section>
 
-            <section id="work" className="portfolio-mf sect-pt4 route"  data-aos="fade-right">
+            <section id="work" className="portfolio-mf sect-pt4 route" data-aos="fade-right">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12">
@@ -126,14 +126,9 @@ function Content() {
                                             <div className="col-sm-12">
                                                 <h2 className="w-title">Administrative Web Interface</h2>
                                                 <div className="w-more">
-                                                    <span className="w-ctegory">Frontend Developer</span> / <span className="w-date">18 Sep. 2018</span>
+                                                    <span className="w-ctegory">Frontend Developer</span> / <span className="w-date">28 Dec. 2024</span>
                                                 </div>
                                             </div>
-                                            {/* <div className="col-sm-4">
-                                                <div className="w-like">
-                                                    <span className="ion-ios-plus-outline"></span>
-                                                </div>
-                                            </div> */}
                                         </div>
                                     </div>
                                 </a>
@@ -150,14 +145,9 @@ function Content() {
                                             <div className="col-sm-12">
                                                 <h2 className="w-title">Customer Web Application</h2>
                                                 <div className="w-more">
-                                                    <span className="w-ctegory">Frontend Developer</span> / <span className="w-date">18 Sep. 2018</span>
+                                                    <span className="w-ctegory">Frontend Developer</span> / <span className="w-date">12 Nov. 2024</span>
                                                 </div>
                                             </div>
-                                            {/* <div className="col-sm-4">
-                                                <div className="w-like">
-                                                    <span className="ion-ios-plus-outline"></span>
-                                                </div>
-                                            </div> */}
                                         </div>
                                     </div>
                                 </a>
@@ -174,36 +164,7 @@ function Content() {
                                             <div className="col-sm-12">
                                                 <h2 className="w-title">Portfolio Web Application</h2>
                                                 <div className="w-more">
-                                                    <span className="w-ctegory">Frontend Developer</span> / <span className="w-date">18 Sep. 2018</span>
-                                                </div>
-                                            </div>
-                                            {/* <div className="col-sm-4">
-                                                <div className="w-like">
-                                                    <span className="ion-ios-plus-outline"></span>
-                                                </div>
-                                            </div> */}
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        {/* <div className="col-md-4">
-                            <div className="work-box">
-                                <a href="img/work-4.jpg" data-lightbox="gallery-mf">
-                                    <div className="work-img">
-                                        <img src="img/work-4.jpg" alt="" className="img-fluid"/>
-                                    </div>
-                                    <div className="work-content">
-                                        <div className="row">
-                                            <div className="col-sm-8">
-                                                <h2 className="w-title">Bindo Laro Cado</h2>
-                                                <div className="w-more">
-                                                    <span className="w-ctegory">Web Design</span> / <span className="w-date">18 Sep. 2018</span>
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-4">
-                                                <div className="w-like">
-                                                    <span className="ion-ios-plus-outline"></span>
+                                                    <span className="w-ctegory">Frontend Developer</span> / <span className="w-date">1 Jan. 2024</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -211,55 +172,6 @@ function Content() {
                                 </a>
                             </div>
                         </div>
-                        <div className="col-md-4">
-                            <div className="work-box">
-                                <a href="img/work-5.jpg" data-lightbox="gallery-mf">
-                                    <div className="work-img">
-                                        <img src="img/work-5.jpg" alt="" className="img-fluid"/>
-                                    </div>
-                                    <div className="work-content">
-                                        <div className="row">
-                                            <div className="col-sm-8">
-                                                <h2 className="w-title">Studio Lena Mado</h2>
-                                                <div className="w-more">
-                                                    <span className="w-ctegory">Web Design</span> / <span className="w-date">18 Sep. 2018</span>
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-4">
-                                                <div className="w-like">
-                                                    <span className="ion-ios-plus-outline"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="work-box">
-                                <a href="img/work-6.jpg" data-lightbox="gallery-mf">
-                                    <div className="work-img">
-                                        <img src="img/work-6.jpg" alt="" className="img-fluid"/>
-                                    </div>
-                                    <div className="work-content">
-                                        <div className="row">
-                                            <div className="col-sm-8">
-                                                <h2 className="w-title">Studio Big Bang</h2>
-                                                <div className="w-more">
-                                                    <span className="w-ctegory">Web Design</span> / <span className="w-date">18 Sep. 2017</span>
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-4">
-                                                <div className="w-like">
-                                                    <span className="ion-ios-plus-outline"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div> */}
-
                     </div>
                 </div>
             </section>
