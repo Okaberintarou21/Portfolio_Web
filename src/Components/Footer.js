@@ -163,8 +163,8 @@ function Footer() {
                                             </Col>
                                         </Row>
                                         <Row className="mt-3">
-                                            <Col md={12}>
-                                                <Button variant="primary" type="submit">
+                                            <Col md={12} className="d-flex justify-content-end">
+                                                <Button variant="primary" type="submit" size='lg' style={{borderRadius: '18px',backgroundColor: '#5622EC'}}>
                                                     Send Message
                                                 </Button>
                                             </Col>
