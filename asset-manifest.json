@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Portfolio_Web/static/css/main.2e5c1831.css",
-    "main.js": "/Portfolio_Web/static/js/main.18d96403.js",
+    "main.js": "/Portfolio_Web/static/js/main.d3b15d43.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio_Web/static/js/453.1407b060.chunk.js",
     "static/media/BGBAS.png": "/Portfolio_Web/static/media/BGBAS.5ea87a8b734826131d90.png",
     "static/media/Professional Minimalist CV Resume (5).pdf": "/Portfolio_Web/static/media/Professional Minimalist CV Resume (5).b3d4c38f2ae000338c65.pdf",
     "static/media/EC8225E2-542F-446B-A784-E7BDDF6A545F.jpg": "/Portfolio_Web/static/media/EC8225E2-542F-446B-A784-E7BDDF6A545F.42877e83e66dd255883b.jpg",
     "index.html": "/Portfolio_Web/index.html",
     "main.2e5c1831.css.map": "/Portfolio_Web/static/css/main.2e5c1831.css.map",
-    "main.18d96403.js.map": "/Portfolio_Web/static/js/main.18d96403.js.map",
+    "main.d3b15d43.js.map": "/Portfolio_Web/static/js/main.d3b15d43.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio_Web/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2e5c1831.css",
-    "static/js/main.18d96403.js"
+    "static/js/main.d3b15d43.js"
   ]
 }
