@@ -46,9 +46,6 @@ function Footer() {
                 formRef.current,
                 '7DjkrjYPQHTAG4vjA'
             );
-
-            console.log('Email sent successfully:', result.text);
-
             Swal.fire({
                 title: 'Success!',
                 text: 'Your message has been sent.',
