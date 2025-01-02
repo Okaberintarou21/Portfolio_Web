@@ -5,6 +5,9 @@ import Chart from './Chart';
 import AOS from 'aos';
 import { useEffect } from 'react';
 import 'aos/dist/aos.css'; // AOS styles
+import Webadmin from '../assets/video/Screenshot 2025-01-01 214230.png'
+import Portfolio from '../assets/video/Screenshot 2025-01-01 220402.png'
+import Customer from '../assets/video/Screenshot 2025-01-01 222146.png'
 
 
 function Content() {
@@ -42,25 +45,9 @@ function Content() {
                                         <div className="skill-mf">
                                             <p className="title-s">Skill</p>
                                             <span>HTML</span> <ProgressBar variant="danger" now={80} />
-                                            {/* <div className="progress">
-                                                <div className="progress-bar" role="progressbar" style={{ width: "85%" }} aria-valuenow="85" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div> */}
                                             <span>CSS3</span>  <ProgressBar variant="info" now={65} />
-                                            {/* <div className="progress">
-                                                <div className="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow="75" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div> */}
                                             <span>JAVASCRIPT</span> <ProgressBar variant="warning" now={70} />
-                                            {/* <div className="progress">
-                                                <div className="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="90" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div> */}
                                             <span>PYTHON</span> <ProgressBar variant="success" now={60} />
-                                            {/* <div className="progress">
-                                                <div className="progress-bar" role="progressbar" style={{ width: "50%" }} aria-valuenow="50" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div> */}
                                         </div>
                                     </div>
                                     <div className="col-md-6">
@@ -107,19 +94,16 @@ function Content() {
                                 <h3 className="title-a">
                                     Projects
                                 </h3>
-                                {/* <p className="subtitle-a">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                </p> */}
                                 <div className="line-mf"></div>
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-md-4">
-                            <div className="work-box">
-                                <a href="img/work-1.jpg" data-lightbox="gallery-mf">
+                            <div className="work-box"  data-aos="fade-up">
+                                <a  href="https://okaberintarou21.github.io/Portfolio_Web/" >
                                     <div className="work-img">
-                                        <img src="img/work-1.jpg" alt="" className="img-fluid" />
+                                        <img src={Webadmin} alt="webadmin" className="img-fluid" />
                                     </div>
                                     <div className="work-content">
                                         <div className="row">
@@ -135,11 +119,10 @@ function Content() {
                             </div>
                         </div>
                         <div className="col-md-4">
-                            <div className="work-box">
-                                <a href="img/work-2.jpg" data-lightbox="gallery-mf">
+                            <div className="work-box" style={{ opacity: '0.5' }} data-aos="fade-down">
+                                <div>
                                     <div className="work-img">
-                                        <img src="img/work-2.jpg" alt="" className="img-fluid" />
-                                    </div>
+                                        <img src={Customer} alt="Customer" className="img-fluid" />                                    </div>
                                     <div className="work-content">
                                         <div className="row">
                                             <div className="col-sm-12">
@@ -150,14 +133,14 @@ function Content() {
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div className="col-md-4">
-                            <div className="work-box">
-                                <a href="img/work-3.jpg" data-lightbox="gallery-mf">
+                            <div className="work-box" data-aos="fade-down">
+                                <a href="https://okaberintarou21.github.io/Portfolio_Web/">
                                     <div className="work-img">
-                                        <img src="img/work-3.jpg" alt="" className="img-fluid" />
+                                        <img src={Portfolio} alt="" className="img-fluid" />
                                     </div>
                                     <div className="work-content">
                                         <div className="row">

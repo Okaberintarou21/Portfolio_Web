@@ -105,7 +105,7 @@ function Footer() {
                                             </Col>
                                         </Row>
                                         <Row className="mt-3">
-                                            <Col md={12}>
+                                            <Col md={8}>
                                                 <Form.Group>
                                                     <Form.Label>Subject</Form.Label>
                                                     <Form.Control
@@ -119,7 +119,7 @@ function Footer() {
                                             </Col>
                                         </Row>
                                         <Row className="mt-3">
-                                            <Col md={6}>
+                                            <Col md={4}>
                                                 <Form.Group>
                                                     <Form.Label>Name</Form.Label>
                                                     <Form.Control
@@ -131,7 +131,7 @@ function Footer() {
                                                     />
                                                 </Form.Group>
                                             </Col>
-                                            <Col md={6}>
+                                            <Col md={4}>
                                                 <Form.Group>
                                                     <Form.Label>Email</Form.Label>
                                                     <Form.Control
@@ -145,7 +145,7 @@ function Footer() {
                                             </Col>
                                         </Row>
                                         <Row className="mt-3">
-                                            <Col md={12}>
+                                            <Col md={8}>
                                                 <Form.Group>
                                                     <Form.Label>Message</Form.Label>
                                                     <Form.Control
@@ -160,8 +160,9 @@ function Footer() {
                                             </Col>
                                         </Row>
                                         <Row className="mt-3">
-                                            <Col md={12} className="d-flex justify-content-end">
-                                                <Button variant="primary" type="submit" size='lg' style={{borderRadius: '18px',backgroundColor: '#5622EC'}}>
+                                            <Col md={8}></Col>
+                                            <Col md={4} className="d-flex justify-content-center">
+                                                <Button variant="primary" type="submit" size='lg' style={{ borderRadius: '18px', backgroundColor: '#5622EC' }}>
                                                     Send Message
                                                 </Button>
                                             </Col>
@@ -179,10 +180,12 @@ function Footer() {
                                 <div className="copyright-box">
                                     <p className="copyright">© 2024 Portfolio. All Rights Reserved</p>
                                     <div className="credits">
-                                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>, Developed by{' '}
+                                        Designed by <a
+                                            href="https://bootstrapmade.com/" style={{ color: 'white', borderBottom: '1px solid white', fontWeight: 'bold', lineHeight: '2' }}
+                                        >BootstrapMade</a>, Developed by{' '}
                                         <a
                                             href="https://github.com/Okaberintarou21"
-                                            style={{ color: 'white', borderBottom: '1px solid white' }}
+                                            style={{ color: 'white', borderBottom: '1px solid white', fontWeight: 'bold',lineHeight: '2' }}
                                         >
                                             Okaberintarou21
                                         </a>
