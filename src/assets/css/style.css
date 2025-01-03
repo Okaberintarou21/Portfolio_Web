@@ -476,7 +476,8 @@ a:hover {
   color: #fff;
 }
 
-.navbar-b.navbar-trans .nav-link, .navbar-b.navbar-reduce .nav-link {
+.navbar-b.navbar-trans .nav-link,
+.navbar-b.navbar-reduce .nav-link {
   color: #8000ff;
 }
 
@@ -579,7 +580,10 @@ a:hover {
   transition: -webkit-transform .35s ease-in-out;
   transition: transform .35s ease-in-out;
   transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
+  background-color: #8000FF;
+  /* ใช้สีสำหรับเส้น */
 }
+
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
   position: absolute;
@@ -808,7 +812,8 @@ a:hover {
 }
 
 .work-content .w-more .w-ctegory {
-  color: #8000ff;}
+  color: #8000ff;
+}
 
 .work-content .w-like {
   font-size: 2.5rem;

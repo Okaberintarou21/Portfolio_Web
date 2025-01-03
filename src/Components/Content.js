@@ -3,14 +3,56 @@ import owner from '../assets/img/EC8225E2-542F-446B-A784-E7BDDF6A545F.jpg'
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Chart from './Chart';
 import AOS from 'aos';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import 'aos/dist/aos.css'; // AOS styles
 import Webadmin from '../assets/video/Screenshot 2025-01-01 214230.png'
 import Portfolio from '../assets/video/Screenshot 2025-01-01 220402.png'
 import Customer from '../assets/video/Screenshot 2025-01-01 222146.png'
+import { Modal,Row,Col } from "react-bootstrap";
+const VideoPlayerModal = ({ setShow, show }) => {
 
+    return (
+        <Modal show={show} onHide={() => setShow(false)} centered size="lg" backdrop='static' >
+            <Modal.Header closeButton>
+                <Modal.Title></Modal.Title>
+            </Modal.Header>
+            <Modal.Body className='d-flex justify-content-center'>
+                <Row>
+                    <Col md={12} className="d-flex justify-content-center">
+                        <div style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            backgroundColor: '#f9f9f9',
+                            border: '1px solid #ddd',
+                            borderRadius: '10px',
+                            padding: '20px',
+                            boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+                            maxWidth: '700px',
+                            margin: '20px auto'
+                        }}>
+                            <iframe
+                                src="https://drive.google.com/file/d/1nSBckGA2xNx3Yhf_D9_lfUzQcwMlKrLL/preview"
+                                width="640"
+                                height="480"
+                                allow="autoplay"
+                                title="webadminshow"
+                                style={{
+                                    borderRadius: '8px',
+                                    border: 'none',
+                                }}
+                            />
+                        </div>
+                    </Col>
+                </Row>
+            </Modal.Body>
+        </Modal>
+
+    );
+};
 
 function Content() {
+    const [modalshow, setModalShow] = useState(false);
     useEffect(() => {
         // Initialize AOS
         AOS.init({
@@ -18,6 +60,7 @@ function Content() {
 
         });
     }, []);
+
     return (
         <div data-aos="fade-left">
             <section id="about" className="about-mf sect-pt4 route">
@@ -100,8 +143,8 @@ function Content() {
                     </div>
                     <div className="row">
                         <div className="col-md-4">
-                            <div className="work-box"  data-aos="fade-up">
-                                <a  href="https://okaberintarou21.github.io/Portfolio_Web/" >
+                            <div className="work-box" data-aos="fade-up">
+                                <div onClick={() => setModalShow(true)} style={{ cursor: 'pointer' }}>
                                     <div className="work-img">
                                         <img src={Webadmin} alt="webadmin" className="img-fluid" />
                                     </div>
@@ -115,7 +158,7 @@ function Content() {
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div className="col-md-4">
@@ -158,6 +201,10 @@ function Content() {
                     </div>
                 </div>
             </section>
+            <VideoPlayerModal
+                show={modalshow}
+                setShow={setModalShow}
+            />
         </div>
     )
 }
